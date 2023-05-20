@@ -1,0 +1,8 @@
+export XDG_CONFIG_HOME=$HOME/.config
+VIM="nvim"
+
+export DOTFILES=$HOME/.dotfiles
+export GIT_EDITOR=$VIM
+export CC="clang-12"
+export CXX="clang++-12"
+
