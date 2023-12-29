@@ -3,9 +3,7 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-  'omnisharp',
-  'lua-language-server',
-  'cmake-language-server'
+  'omnisharp'
 })
 
 -- Fix Undefined global 'vim'
