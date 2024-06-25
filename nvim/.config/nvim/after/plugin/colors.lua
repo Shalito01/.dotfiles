@@ -24,7 +24,7 @@ require("gruvbox").setup({
 })
 vim.cmd("colorscheme gruvbox")
 
-function ColorMyPencils(color) 
+function ColorMyPencils(color)
 	color = color or "gruvbox"
 	vim.cmd.colorscheme(color)
 
@@ -33,4 +33,4 @@ function ColorMyPencils(color)
 
 end
 
-ColorMyPencils()
+ColorMyPencils('gruvbox')
