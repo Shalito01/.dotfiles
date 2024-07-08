@@ -99,5 +99,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=$PATH:/home/$USER/go/bin/:/home/$USER/.local/bin
+export PATH=$PATH:$HOME/go/bin/:$HOME/.local/bin
 alias vim="nvim"
