@@ -1,3 +1,15 @@
+require("onedark").load()
+
+require("github-theme").setup({
+    options = {
+        transparent = true,
+        styles = {
+            keywords = "bold",
+            types = "bold",
+        }
+    }
+})
+
 require("gruvbox").setup({
   terminal_colors = true, -- add neovim terminal colors
   undercurl = true,
@@ -22,15 +34,14 @@ require("gruvbox").setup({
   dim_inactive = false,
   transparent_mode = false,
 })
-vim.cmd("colorscheme gruvbox")
 
 function ColorMyPencils(color)
-	color = color or "gruvbox"
+	color = color or "onedark"
 	vim.cmd.colorscheme(color)
 
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+	-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 end
 
-ColorMyPencils('gruvbox')
+ColorMyPencils('github_dark')
