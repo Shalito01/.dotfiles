@@ -6,8 +6,17 @@ vim.cmd.packadd('packer.nvim')
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
+
     use 'terrortylor/nvim-comment'
+
+
+    -- Themes
+    use {'nyoom-engineering/oxocarbon.nvim'}
     use { "ellisonleao/gruvbox.nvim" }
+    use 'Mofiqul/vscode.nvim'
+    use "rebelot/kanagawa.nvim"
+    use "0xstepit/flow.nvim"
+    use "EdenEast/nightfox.nvim"
 
     use({
         "iamcco/markdown-preview.nvim",
@@ -19,8 +28,6 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-
-    use "ellisonleao/gruvbox.nvim"
 
     use({
         "folke/trouble.nvim",

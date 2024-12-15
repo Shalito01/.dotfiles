@@ -30,4 +30,5 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "100"
-
+vim.opt.list = true
+vim.opt.listchars = "tab:>-,trail:-,extends:#,nbsp:.,space:+,eol:\\x24"
